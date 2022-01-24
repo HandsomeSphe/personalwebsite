@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/LogoIconn/PNG/logo-removebg-preview.png"
+      type="image/x-icon"
+      sizes="144x144"
+    />
+    <title>Sphe_handy</title>
+  </head>
+  <body>
+<!--//////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////Navigation Bar //////////////////////-->
+
+
+  <nav class="nav" id="fixedbar">
+    <img
+      class="logo"
+      src="/LogoIconn/PNG/logo-removebg-preview.png"
+      alt="logo"
+    />
+    <ul class="nav__links">
+      <li class="nav__item">
+        <a href="#home" class="nav__link">Home</a>
+      </li>
+      <li class="nav__item">
+        <a href="#section__about" class="nav__link">About</a>
+      </li>
+      <li class="nav__item">
+        <a href="#section--4" class="nav__link">Website?</a>
+      </li>
+      <li class="nav__item">
+        <a href="#section__portfolio" class="nav__link">Portofolio</a>
+      </li>
+      <li class="nav__item nav__item--btn">
+        <a href="#footer" class="nav__link nav__link--btn btn--show-popup"
+          >Contact</a
+        >
+      </li>
+    </ul>
+    <div class="burger__icon">
+      <div class="burger__icon--line line1"></div>
+      <div class="burger__icon--line line2"></div>
+      <div class="burger__icon--line line3"></div>
+    </div>
+  </nav> 
+<header class="header">
+     <nav class="nav" id="actualnav">
+      <img
+        class="logo"
+        src="/LogoIconn/PNG/logo-removebg-preview.png"
+        alt="logo"
+      />
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#section__about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#section--4" class="nav__link">Website?</a>
+        </li>
+        <li class="nav__item">
+          <a href="#section__portfolio" class="nav__link">Portofolio</a>
+        </li>
+        <li class="nav__item nav__item--btn">
+          <a href="#footer" class="nav__link nav__link--btn btn--show-popup"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="burger__icon" id="secondburger">
+        <div class="burger__icon--line line1"></div>
+        <div class="burger__icon--line line2"></div>
+        <div class="burger__icon--line line3"></div>
+      </div>
+    </nav> 
+  <!--//////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////HOME PAGE//////////////////////-->
+    <div class="header__title">
+      <h5>Hi, my name is</h5>
+      <h1>Siphelele Muthwa</h1>
+      <h1 class="h1">
+        I am a website
+        <div class="options">
+          <span></span>
+          <span class="designer">designer</span>
+          <span class="developer">developer</span>
+        </div>
+      </h1>
+      <p class="person-description">
+        I'm a self-taught front-end developer and a UI/UX designer. I design and build websites from
+        scratch. I am on a quest to build great digital products that other people can use. I am solving everyday problems with code. I build websites for companies, brands and
+        individuals. Co-founder of
+        <a class="widetect-link" href="https://widetechza.com" target="_blank"
+          >WideTech</a
+        >
+      </p>
+      <button class="whatsapp__btn">
+        <a href="https://wa.me/+270838777461" class="btn--link"
+          ><i class="fa fa-whatsapp">Let's chat whatsapp</i></a
+        >
+        <svg class="Whatsapp">
+          <use
+            xlink:href="Icons3/SVG/sprite.svg#icon-whatsapp_logo_icon"
+          ></use>
+        </svg>
+      </button>
+    </div>
+    <!------Side line ----->
+    <div class="random-line"></div> 
+<!--//////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////MENU BAR//////////////////////-->
+    <!---Menu for small screens-->
+   <div class="menu">
+      <button class="remove">x</button>
+      <ul class="menu__links">
+        <li class="menu__items">
+          <a href="#home" class="menu__link">Home</a>
+        </li>
+        <li class="menu__items">
+          <a href="#section__about" class="menu__link">About</a>
+        </li>
+        <li class="menu__items">
+          <a href="#section--4" class="menu__link">Need a website?</a>
+        </li>
+        <li class="menu__items">
+          <a href="#section__portfolio" class="menu__link">Portfolio</a>
+        </li>
+        <li class="menu__items">
+          <a href="#footer" class="menu__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+</header>
+
+
+    <!-- <main class="main"> -->
+    <!--//////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////ABOUT SECTION//////////////////////-->
+     <section class="section" >
+        <div id="section__about">
+            <div id="section__about--pic">
+              <div class="pic--outline">
+                <img src="./images/IMG-20201102-WA0010.jpg" alt="" class="pic" />
+              </div>
+    
+              <div class="my-location">
+                <svg class="location-pin">
+                  <use xlink:href="Icons2/SVG/sprite.svg#icon-map-pin"></use>
+                </svg>
+                South Africa
+              </div>
+              <div class="social__media--handles">
+                <a
+                  href="https://www.instagram.com/sphe_handy/"
+                  target="_blank"
+                  class="instagram-link"
+                >
+                  <svg class="Instagram icon">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-hexagon_instagram_media_polygon_social_icon"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/siphelele-muthwa-4456771b6/"
+                  target="_blank"
+                  class="linkedin-link"
+                >
+                  <svg class="linkedin icon">
+                    <use
+                      class="linkedin icon"
+                      xlink:href="Icons2/SVG/sprite.svg#icon-hexagon_in_linked_media_polygon_icon"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/HandsomeSphe"
+                  target="_blank"
+                  class="github-link"
+                >
+                  <svg class="github icon">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-github_hexagon_media_polygon_social_icon"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/siphehandy/"
+                  target="_blank"
+                  class="facebook-link"
+                >
+                  <svg class="facebook icon">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-facebook_hexagon_media_polygon_social_icon"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+       
+            <div id="section__about--details">
+              <div class="my-name">Background</div>
+    
+              <div class="personal-description">
+                <div class="personal-description-1">
+                  Coming from a indoor life, I was always on the browser searching, playing online
+                  games, reading blogs and so on, I felt in love with websites. I wanted to know how to build one and like that I was hooked. <span class="time-experience">1</span> years later I am self-taught web developer and a designer. You can see my
+                  <a
+                    href="./images/Siphelele_Muthwa_-_Front_end_Developer,_UIUX_Designer.pdf"
+                    target="_blank"
+                    class="devMille"
+                    >resume</a
+                  >.
+                </div>
+                <div class="personal-description-2">
+                  Status: freelancing.
+                </div>
+              </div>
+              <div class="tools">
+                <div class="tools__programming--title">
+                  Programming and design tools
+                </div>
+                <div class="tools__programming--items">
+                  <div class="item item1">JavaScripts</div>
+                  <div class="item item2">HTML5</div>
+                  <div class="item item3">CSS3/Sass</div>
+                  <div class="item item4">Bootstrap</div>
+                  <div class="item item5">Liquid</div>
+                  <div class="item item6">Figma</div>
+                  <div class="item item7">Shopify</div>
+                  <div class="item item8">GIMP</div>
+                </div>
+              </div>
+            </div>
+        </div>
+   
+      </section> 
+
+    <!--//////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////PORTFOLIO SECTION//////////////////////-->
+       <section class="project" id="section__portfolio">
+        <div id="section__portfolio--heading">Portfolio</div>
+        <div id="section__portfolio--contanier">
+          <div class="project__photo" id="OGpic">
+            <img
+              class="firstPic"
+              src="./images/ogcarperfume home page.jpg"
+              alt="budgety"
+            />
+          </div>
+          <div class="project__description">
+            <div class="project__description--heading">OG Car Perfume</div>
+            <div class="project__description--text">
+              OC car perfume is a South African brand that produce high quality
+              car perfumes which is based in Durban.They have wide varity of
+              products so they were looking a website that will make them stand
+              out in the crown but be modern as well.
+              <br />
+              <br />
+              This a website have modern features, starting with a sticky
+              navigation bar to the ability to order products from the home page
+              and slider
+            </div>
+            <div class="project__description--buttons">
+              <div class="view-btn">
+                <a
+                  href="https://ogcarperfume.netlify.app/"
+                  target="_blank"
+                  class="view"
+                >
+                  <svg class="share">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-launch_open_share_icon"
+                    ></use>
+                  </svg>
+                  view</a
+                >
+              </div>
+              <div class="code-btn">
+                <a
+                  href="https://github.com/HandsomeSphe/OGCARPERFUME"
+                  target="_blank"
+                  class="code"
+                >
+                  <svg class="git">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-github_logo_social-network_social_icon"
+                    ></use>
+                  </svg>
+                  code</a
+                >
+              </div>
+              <div class="vscode-text">Vscode</div>
+            </div>
+            <div class="project__tools">
+              <div class="project__tools--heading">Tools</div>
+              <div class="project__tools--programming">
+                <div class="javascript">
+                  <div class="bullet yellow"></div>
+                  <div class="javascript-text">JavaScript</div>
+                </div>
+                <div class="HTML">
+                  <div class="bullet green"></div>
+                  <div class="javascript-text">HTML</div>
+                </div>
+                <div class="CSS">
+                  <div class="bullet blue"></div>
+                  <div class="javascript-text">CSS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!----//////////////END OF PROJECT 1 ///////////-->
+        <!---//////////Second Project //////////////////////-->
+       <div id="section__portfolio--contanier">
+          <div class="project__photo">
+            <img class="firstPic" src="./images/bootstrapwebsite.png" alt="budgety" />
+          </div>
+          <div class="project__description">
+            <div class="project__description--heading">Bootstrap Powered Website</div>
+            <div class="project__description--text">
+              Static website built with modern CSS framework/library (Bootstrap). It's a faster way of creating a reposnive static website. It includes a lot of modern website features like the modal, smooth scroll down and up, accordion (On the frequently asked questions), bootstrap icons and so on. It's a great way to get a client's static website up and running within a short period of time.Built on a course under Traversy Media guidance
+              
+            </div>
+            <div class="project__description--buttons">
+              <div class="view-btn">
+                <a
+                  href="https://bootstrapwebsitefirst.netlify.app/"
+                  target="_blank"
+                  class="view"
+                >
+                  <svg class="share">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-launch_open_share_icon"
+                    ></use>
+                  </svg>
+                  view</a
+                >
+              </div>
+              <div class="code-btn">
+                <a
+                  href="https://github.com/HandsomeSphe/Bootstrapwebsite"
+                  target="_blank"
+                  class="code"
+                >
+                  <svg class="git">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-github_logo_social-network_social_icon"
+                    ></use>
+                  </svg>
+                  code</a
+                >
+              </div>
+              <div class="vscode-text">Vscode</div>
+            </div>
+            <div class="project__tools">
+              <div class="project__tools--heading">Tools</div>
+              <div class="project__tools--programming">
+                <div class="CSS">
+                  <div class="bullet blue"></div>
+                  <div class="javascript-text">Bootstrap</div>
+                </div>
+                <div class="javascript">
+                  <div class="bullet yellow"></div>
+                  <div class="javascript-text">JavaScript</div>
+                </div>
+                <div class="HTML">
+                  <div class="bullet green"></div>
+                  <div class="javascript-text">HTML</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!----//////////////END OF PROJECT 2 ///////////-->
+        <!---//////////Third Project //////////////////////-->
+        <!-- <div class="project" id="section__portfolio--contanier">
+          <div class="project__photo project__photo-second">
+            <img
+              class="secondPic"
+              src="./images/Screenshot.png"
+              alt="bankist website"
+            />
+          </div>
+          <div class="project__description">
+            <div class="project__description--heading">Bankist website</div>
+            <div class="project__description--text projec--2">
+              Bankist website follows the Bankist web app, It simple focuses on
+              modern websites fearures. DOM manupilation. First feature that is
+              stunning is the sticky navigation bar that uses
+              intersectionObserver API, lazy loading images, tabbed component
+              and lastly the is a slider for testimonals
+              <br />
+             
+              Built on JavaScript course
+            </div>
+            <div class="project__description--buttons">
+              <div class="view-btn">
+                <a
+                  href="https://bankistwebsitee.netlify.app/"
+                  target="_blank"
+                  class="view"
+                >
+                  <svg class="share">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-launch_open_share_icon"
+                    ></use>
+                  </svg>
+                  view</a
+                >
+              </div>
+              <div class="code-btn">
+                <a
+                  href="https://github.com/HandsomeSphe/bankist-website"
+                  target="_blank"
+                  class="code"
+                >
+                  <svg class="git">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-github_logo_social-network_social_icon"
+                    ></use>
+                  </svg>
+                  code</a
+                >
+              </div>
+              <div class="vscode-text">Vscode</div>
+            </div>
+            <div class="project__tools">
+              <div class="project__tools--heading">Tools</div>
+              <div class="project__tools--programming">
+                <div class="javascript">
+                  <div class="bullet yellow"></div>
+                  <div class="javascript-text">JavaScript</div>
+                </div>
+                <div class="HTML green">
+                  <div class="bullet"></div>
+                  <div class="javascript-text">HTML</div>
+                </div>
+                <div class="CSS blue">
+                  <div class="bullet"></div>
+                  <div class="javascript-text">CSS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!----//////////////END OF PROJECT 3 ///////////-->
+
+        <!---//////////Fourth Project //////////////////////-->
+        <!-- <div class="project" id="section__portfolio--contanier">
+          <div class="project__photo">
+            <video
+              src="../images/Bankist.mp4"
+              class="thirdPic"
+              autoplay
+              loop
+            ></video>
+          </div>
+          <div class="project__description">
+            <div class="project__description--heading">Bankist web app</div>
+            <div class="project__description--text project--3">
+              Bankist web app is the modern way of banking remotely. It's have a
+              login feature, There is a transfer money,borrow money and close
+              account tab. User 1: js & password: 1111. User 2: jd & password:
+              2222
+              <br />
+              <br />
+              Built on JavaScript course
+              <br />
+            </div>
+            <div class="project__description--buttons">
+              <div class="view-btn">
+                <a
+                  href="https://bankistwebapp.netlify.app/"
+                  target="_blank"
+                  class="view"
+                >
+                  <svg class="share">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-launch_open_share_icon"
+                    ></use>
+                  </svg>
+                  view</a
+                >
+              </div>
+              <div class="code-btn">
+                <a
+                  href="https://github.com/HandsomeSphe/bankist-web-app"
+                  target="_blank"
+                  class="code"
+                >
+                  <svg class="git">
+                    <use
+                      xlink:href="Icons2/SVG/sprite.svg#icon-github_logo_social-network_social_icon"
+                    ></use>
+                  </svg>
+                  code</a
+                >
+              </div>
+              <div class="vscode-text">Vscode</div>
+            </div>
+            <div class="project__tools">
+              <div class="project__tools--heading">Tools</div>
+              <div class="project__tools--programming">
+                <div class="javascript">
+                  <div class="bullet yellow"></div>
+                  <div class="javascript-text">JavaScript</div>
+                </div>
+                <div class="HTML green">
+                  <div class="bullet"></div>
+                  <div class="javascript-text">HTML</div>
+                </div>
+                <div class="CSS blue">
+                  <div class="bullet"></div>
+                  <div class="javascript-text">CSS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!----//////////////END OF PROJECT 4 ///////////-->
+      <!-- </section> -->
+      </section>
+
+
+      <footer class="section" id="footer">
+        <!-----Contact Page Popup-->
+
+      <!----//////////////section 3 ///////////-->
+         <!--//////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////FOOTER SECTION//////////////////////-->
+    <footer class="section" id="footer">
+        <div class="contactpage">
+          <div class="contact-popup--heading">
+            <div class="contact-popup--title">Contact me</div>
+            <button class="contact-popup--remove">X</button>
+          </div>
+
+          <form
+            action="https://formspree.io/f/xbjqebya"
+            method="POST"
+            class="contact-input"
+          >
+            <label for="firstname"
+              ><input
+                type="text"
+                class="username"
+                placeholder="FirstName"
+                id="firstname"
+                name="firstname"
+                required
+            /></label>
+            <label for="email">
+              <input
+                type="email"
+                class="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+                required
+            /></label>
+
+            <textarea
+              name="message"
+              id="mssg"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="submit" id="submitpopup">
+              submit
+            </button>
+          </form>
+        </div>
+
+        <div id="footer__heading">
+            This website was designed and build by Sphe_handy. 
+        </div>
+        <button id="footer__btn">Contact me via email</button>
+        <div id="footer__logo">
+          <svg id="mySelfLogo">
+            <use xlink:href="LogoIconn/SVG/sprite.svg#icon-new-logo-1"></use>
+          </svg>
+        </div>
+        <div id="copyright"> &copy;copyright.All Rights Reserved</div>
+      </footer> 
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
