@@ -5,11 +5,11 @@
     #011f3c;
   padding: 2rem 3rem;
 
-  // @include respond(desktop) {
-  //   width: 100%;
-  //   height: auto;
-  //   padding: 2rem 3rem;
-  // }
+  @include respond(desktop) {
+    width: 100%;
+    height: auto;
+    padding: 2rem 3rem;
+  }
   @include respond(tab-land) {
     padding: 2rem 3rem;
   }
@@ -59,13 +59,13 @@
   }
   &--contanier {
     display: flex;
-    height: 85vh;
+    height:45rem;
     margin-bottom: 0.3rem;
 
-    // @include respond(desktop) {
-    //   height: 85vh;
-    //   margin-bottom: 0.3rem;
-    // }
+    @include respond(desktop) {
+      height: 45rem;
+      margin-bottom: 0.3rem;
+    }
     @include respond(tablet) {
       flex-direction: column;
       height: auto;
