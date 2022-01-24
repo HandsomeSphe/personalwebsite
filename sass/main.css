@@ -50,6 +50,13 @@ html {
   }
 }
 
+body {
+  background-color: #3a3737;
+  font-weight: 300;
+  color: #ffff;
+  line-height: 1.9;
+}
+
 .header {
   width: 100%;
   height: 55rem;
