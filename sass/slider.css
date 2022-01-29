@@ -1,0 +1,16 @@
+/* SLIDER */
+.slider {
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+  background-color: coral;
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.project__image {
+  width: 3rem;
+  height: 4rem;
+}
+/*# sourceMappingURL=slider.css.map */

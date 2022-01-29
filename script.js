@@ -110,3 +110,9 @@ let current_date = now.getFullYear()
 var time = current_date - 2018;
 
 years_of_coding.textContent = time;
+
+
+/////////////////SLIDER
+const slides = document.querySelectorAll('.slide');
+
+slides.forEach((s, i) => s.style.transform = `translateX(${ 100 * i})`);
