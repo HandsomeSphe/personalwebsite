@@ -113,6 +113,40 @@ years_of_coding.textContent = time;
 
 
 /////////////////SLIDER
-const slides = document.querySelectorAll('.slide');
+const slider = document.querySelector(".slider");
+const scroll_left = document.querySelector(".btn-left");
+const scroll_right = document.querySelector(".btn-right");
+const images_container = document.querySelector(".images");
+const images = document.querySelectorAll(".image");
 
-slides.forEach((s, i) => s.style.transform = `translateX(${ 100 * i})`);
+
+let x = 0;
+let current_image = 0;
+let slideBack = [];
+
+
+scroll_right.addEventListener("click", function(){
+    if( current_image < images.length) {
+        images[current_image].style.transform = `translateX(-${x}%)`;
+        x += 100;
+        current_image += 1;
+        slideBack.push(current_image);
+        
+    }else{
+        a = (slideBack.length - 1) * 100
+    }
+});
+let a = (slideBack.length - 1) * 100
+scroll_left.addEventListener("click", function(){
+    if(slideBack.length > 1){
+        images[slideBack.length - 1 ].style.transform = `translateX(${a}%)`;
+        slideBack.length = slideBack.length - 1 
+        a -= 100;
+        slideBack.unshift();
+    }else{
+         x = 0;
+         current_image = 0;
+         slideBack = [];
+    }
+    
+})
