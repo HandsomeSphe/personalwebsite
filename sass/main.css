@@ -2813,6 +2813,12 @@ label {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), #011f3c;
 }
 
+@media only screen and (max-width: 48em) {
+  .section__slider {
+    height: auto;
+  }
+}
+
 .section__slider .container {
   width: 100%;
   height: 100%;
@@ -2825,6 +2831,34 @@ label {
   margin: auto;
   position: relative;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 48em) {
+  .slider {
+    width: 60rem;
+    height: 35rem;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  .slider {
+    width: 50rem;
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .slider {
+    width: 40rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .slider {
+    width: 30rem;
+    height: 20rem;
+  }
 }
 
 .slider .images {
