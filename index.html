@@ -18,6 +18,7 @@
       type="image/x-icon"
       sizes="144x144"
     />
+    <script src="https://kit.fontawesome.com/ea1b201257.js" crossorigin="anonymous"></script>
     <title>Sphe_handy</title>
   </head>
   <body>
@@ -51,9 +52,11 @@
       </li>
     </ul>
     <div class="burger__icon">
-      <div class="burger__icon--line line1"></div>
-      <div class="burger__icon--line line2"></div>
-      <div class="burger__icon--line line3"></div>
+      <svg id="menu_icon">
+        <use
+          xlink:href="mainIcons/SVG/sprite.svg#icon-bars-solid"
+        ></use>
+      </svg>
     </div>
   </nav> 
 <header class="header">
@@ -83,9 +86,11 @@
         </li>
       </ul>
       <div class="burger__icon" id="secondburger">
-        <div class="burger__icon--line line1"></div>
-        <div class="burger__icon--line line2"></div>
-        <div class="burger__icon--line line3"></div>
+        <svg id="menu_icon">
+          <use
+            xlink:href="mainIcons/SVG/sprite.svg#icon-bars-solid"
+          ></use>
+        </svg>
       </div>
     </nav> 
   <!--//////////////////////////////////////////////////////////////////////////////
@@ -102,22 +107,25 @@
         </div>
       </h1>
       <p class="person-description">
-        I'm a self-taught front-end developer and a UI/UX designer. I design and build websites from
+        I'm a front-end developer and a UI/UX designer. I design and build websites from
         scratch. I am on a quest to build great digital products that other people can use. I am solving everyday problems with code. I build websites for companies, brands and individuals. 
-        <!-- Co-founder of
-        <a class="widetect-link" href="https://widetechza.com" target="_blank"
-          >WideTech</a
-        > -->
       </p>
- 
+
     </div>
     <!------Side line ----->
-    <div class="random-line"></div> 
+    <div class="random-line"></div>
+
 <!--//////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////MENU BAR//////////////////////-->
     <!---Menu for small screens-->
    <div class="menu">
-      <button class="remove">x</button>
+      <div>
+        <svg class="remove">
+          <use
+            xlink:href="mainIcons/SVG/sprite.svg#icon-share-solid-1"
+          ></use>
+        </svg>
+      </div>
       <ul class="menu__links">
         <li class="menu__items">
           <a href="#home" class="menu__link">Home</a>
@@ -139,7 +147,7 @@
 </header>
 
 
-    <!-- <main class="main"> -->
+  <main class="main">
     <!--//////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////ABOUT SECTION//////////////////////-->
      <section class="section" >
@@ -151,7 +159,7 @@
     
               <div class="my-location">
                 <svg class="location-pin">
-                  <use xlink:href="Icons2/SVG/sprite.svg#icon-map-pin"></use>
+                  <use xlink:href="mainIcons/SVG/sprite.svg#icon-location-dot-solid"></use>
                 </svg>
                 South Africa
               </div>
@@ -163,7 +171,7 @@
                 >
                   <svg class="Instagram icon">
                     <use
-                      xlink:href="Icons2/SVG/sprite.svg#icon-hexagon_instagram_media_polygon_social_icon"
+                      xlink:href="Icons3/SVG/sprite.svg#icon-hexagon_instagram_media_polygon_social_icon"
                     ></use>
                   </svg>
                 </a>
@@ -175,7 +183,7 @@
                   <svg class="linkedin icon">
                     <use
                       class="linkedin icon"
-                      xlink:href="Icons2/SVG/sprite.svg#icon-hexagon_in_linked_media_polygon_icon"
+                      xlink:href="mainIcons/SVG/sprite.svg#icon-linkedin-brands"
                     ></use>
                   </svg>
                 </a>
@@ -186,7 +194,7 @@
                 >
                   <svg class="github icon">
                     <use
-                      xlink:href="Icons2/SVG/sprite.svg#icon-github_hexagon_media_polygon_social_icon"
+                      xlink:href="mainIcons/SVG/sprite.svg#icon-github-square-brands"
                     ></use>
                   </svg>
                 </a>
@@ -197,7 +205,7 @@
                 >
                   <svg class="facebook icon">
                     <use
-                      xlink:href="Icons2/SVG/sprite.svg#icon-facebook_hexagon_media_polygon_social_icon"
+                      xlink:href="mainIcons/SVG/sprite.svg#icon-facebook-square-brands"
                     ></use>
                   </svg>
                 </a>
@@ -536,11 +544,11 @@
             <div id="section__portfolio--heading">UI/UX Designs</div>
             <div class="slider">
               <div class="images">
-                <img class="image" src="./images/bankist web app.png" alt="">
-                <img class="image" src="./images/bootstrapwebsite.png" alt="">      
-                <img class="image" src="./images/Screenshot.png" alt="">      
-                <img class="image" src="./images/Shopify store image.png" alt="">
-                <img class="image" src="./images/ogcarperfume home page.jpg" alt="" >      
+                <img class="imageSlider imageSlider__visible" src="./images/bankist web app.png" alt="">
+                <img class="imageSlider" src="./images/bootstrapwebsite.png" alt="">      
+                <img class="imageSlider" src="./images/Screenshot.png" alt="">      
+                <img class="imageSlider" src="./images/Shopify store image.png" alt="">
+                <img class="imageSlider" src="./images/ogcarperfume home page.jpg" alt="" >      
               </div>
               <div class="btns">
                 <div class="btn-left">&leftarrow;</div>
@@ -559,7 +567,13 @@
         <div class="contactpage">
           <div class="contact-popup--heading">
             <div class="contact-popup--title">Contact me</div>
-            <button class="contact-popup--remove">X</button>
+            <div>
+              <svg class="contact-popup--remove">
+                <use
+                  xlink:href="mainIcons/SVG/sprite.svg#icon-share-solid-1"
+                ></use>
+              </svg>
+            </div>
           </div>
 
           <form
@@ -600,6 +614,7 @@
         </div>
 
         <div id="footer__heading">
+          <i class="fa-solid fa-trophy-star"></i>
             This website was designed and build by Sphe_handy. 
         </div>
         <button id="footer__btn">Contact me via email</button>
@@ -608,9 +623,10 @@
             <use xlink:href="LogoIconn/SVG/sprite.svg#icon-new-logo-1"></use>
           </svg>
         </div>
-        <div id="copyright"> &copy;copyright.All Rights Reserved</div>
+        <div id="copyright">&copy;copyright.All Rights Reserved</div>
       </footer> 
-    </main>
+  </main>
     <script src="script.js"></script>
+
   </body>
 </html>

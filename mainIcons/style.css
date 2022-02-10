@@ -1,0 +1,112 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-plus-solid {
+  width: 0.875em;
+}
+
+.icon-bars-solid {
+  width: 0.875em;
+}
+
+.icon-user-plus-solid {
+  width: 1.25em;
+}
+
+.icon-user-solid {
+  width: 0.875em;
+}
+
+.icon-map-pin-solid {
+  width: 0.625em;
+}
+
+.icon-location-dot-solid {
+  width: 0.75em;
+}
+
+.icon-figma-brands-1 {
+  width: 0.75em;
+}
+
+.icon-figma-brands {
+  width: 0.75em;
+}
+
+.icon-linkedin-brands {
+  width: 0.875em;
+}
+
+.icon-facebook-square-brands {
+  width: 0.875em;
+}
+
+.icon-github-square-brands {
+  width: 0.875em;
+}
+
+.icon-shopify-brands {
+  width: 0.875em;
+}
+
+.icon-code-solid {
+  width: 1.25em;
+}
+
+.icon-html5-brands {
+  width: 0.75em;
+}
+
+.icon-css3-alt-brands {
+  width: 0.75em;
+}
+
+.icon-js-brands {
+  width: 0.875em;
+}
+
+.icon-trophy-solid {
+  width: 1.125em;
+}
+
+.icon-bootstrap-brands {
+  width: 1.125em;
+}
+
+.icon-database-solid {
+  width: 0.875em;
+}
+
+.icon-arrow-up-from-bracket-solid {
+  width: 0.875em;
+}
+
+.icon-share-nodes-solid-1 {
+  width: 0.875em;
+}
+
+.icon-share-nodes-solid {
+  width: 0.875em;
+}
+
+.icon-backward-step-solid {
+  width: 0.625em;
+}
+
+.icon-star-solid {
+  width: 1.125em;
+}

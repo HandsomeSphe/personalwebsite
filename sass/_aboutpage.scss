@@ -319,12 +319,13 @@
   }
 }
 .icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width:.5rem;
+  height:.5rem;
+  fill: rgba(173, 240, 209, .3);
   transition: all 0.2s;
   @include respond(desktop) {
-    width: 2.4rem;
-    height: 2.4rem;
+    width:2rem;
+    height:2rem;
     transition: all 0.2s;
   }
   @include respond(tab-land) {

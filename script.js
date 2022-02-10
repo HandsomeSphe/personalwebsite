@@ -113,40 +113,41 @@ years_of_coding.textContent = time;
 
 
 /////////////////SLIDER
-const slider = document.querySelector(".slider");
-const scroll_left = document.querySelector(".btn-left");
-const scroll_right = document.querySelector(".btn-right");
-const images_container = document.querySelector(".images");
-const images = document.querySelectorAll(".image");
+
+let slidePosition = 0;
+const slides = document.getElementsByClassName("imageSlider");
+const  totalSlides = slides.length;
 
 
-let x = 0;
-let current_image = 0;
-let slideBack = [];
+document.querySelector(".btn-right").addEventListener("click", moveToNextSlide);
 
 
-scroll_right.addEventListener("click", function(){
-    if( current_image < images.length) {
-        images[current_image].style.transform = `translateX(-${x}%)`;
-        x += 100;
-        current_image += 1;
-        slideBack.push(current_image);
-        
-    }else{
-        a = (slideBack.length - 1) * 100
-    }
-});
-let a = (slideBack.length - 1) * 100
-scroll_left.addEventListener("click", function(){
-    if(slideBack.length > 1){
-        images[slideBack.length - 1 ].style.transform = `translateX(${a}%)`;
-        slideBack.length = slideBack.length - 1 
-        a -= 100;
-        slideBack.unshift();
-    }else{
-         x = 0;
-         current_image = 0;
-         slideBack = [];
-    }
-    
-})
+document.querySelector(".btn-left").addEventListener("click", moveToPrevSlide)
+
+
+function updateSlidePosition(){
+  for(let slide of slides){
+    slide.classList.remove('imageSlider__visible');
+    slide.classList.add('imageSlider__hidden');
+  }
+  slides[slidePosition].classList.add('imageSlider__visible')
+  slides[slidePosition].classList.remove('imageSlider__hidden')
+}
+
+function moveToNextSlide(){
+  if(slidePosition === totalSlides - 1){
+    slidePosition = 0
+  }else{
+    slidePosition++
+  }
+  updateSlidePosition();
+}
+function moveToPrevSlide(){
+  if(slidePosition === 0){
+    slidePosition = totalSlides - 1;
+  }else{
+    slidePosition--
+  }
+  updateSlidePosition();
+
+}

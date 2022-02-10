@@ -883,6 +883,14 @@ h1 {
   margin-bottom: 0.16rem;
 }
 
+#menu_icon {
+  width: 1rem;
+  fill: white;
+  width: 2.4rem;
+  height: 2.7rem;
+  cursor: pointer;
+}
+
 .menu {
   width: 100%;
   height: 100vh;
@@ -933,6 +941,7 @@ h1 {
   height: 2rem;
   border: none;
   border-radius: 5px;
+  fill: white;
 }
 
 .sticky {
@@ -1475,16 +1484,17 @@ h1 {
 }
 
 .icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: .5rem;
+  height: .5rem;
+  fill: rgba(173, 240, 209, 0.3);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 @media only screen and (min-width: 64em) {
   .icon {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2rem;
+    height: 2rem;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
@@ -2739,8 +2749,7 @@ h1 {
 .contact-popup--remove {
   width: 1.7rem;
   height: 1.7rem;
-  border: 2px solid #eb2121;
-  color: #eb2121;
+  fill: black;
   background-color: transparent;
   border-radius: 3rem;
   text-align: center;
@@ -2798,6 +2807,8 @@ label {
   width: 25rem;
   height: 3rem;
   border: none;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
@@ -2829,7 +2840,7 @@ label {
 
 .slider {
   width: 70rem;
-  height: 40rem;
+  height: 50rem;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -2864,12 +2875,13 @@ label {
 }
 
 .slider .images {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.slider .image {
+.slider .imageSlider {
   width: 100%;
 }
 
@@ -2877,6 +2889,8 @@ label {
   width: 100%;
   position: absolute;
   top: 40%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2894,5 +2908,15 @@ label {
   text-align: center;
   border-radius: 20rem;
   cursor: pointer;
+}
+
+.imageSlider__visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.imageSlider__hidden {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

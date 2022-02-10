@@ -14,7 +14,7 @@
 }
 .slider{
   width:70rem;
-  height:40rem;
+  height:50rem;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -38,16 +38,18 @@
 
 }
 .slider .images{
-
+  width:100%;
   display: flex;
 }
-.slider .image{
+.slider .imageSlider{
   width:100%;
+
 }
 .btns{
   width:100%;
   position: absolute;
   top:40%;
+  transform: translateY(-40%);
   display:flex;
   justify-content: space-between;
 }
@@ -61,4 +63,11 @@
    border-radius: 20rem;
    cursor:pointer;
 
+}
+.imageSlider__visible{
+  display:flex;
+
+}
+.imageSlider__hidden{
+  display:none;
 }
