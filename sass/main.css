@@ -2739,12 +2739,14 @@ h1 {
 .contact-popup--remove {
   width: 1.7rem;
   height: 1.7rem;
-  border: 1px solid red;
-  color: red;
+  border: 2px solid #eb2121;
+  color: #eb2121;
   background-color: transparent;
   border-radius: 3rem;
   text-align: center;
   cursor: pointer;
+  font-family: poppins, sans-serif;
+  font-weight: 600;
 }
 
 .contact-input {
