@@ -114,40 +114,16 @@ years_of_coding.textContent = time;
 
 /////////////////SLIDER
 
-let slidePosition = 0;
-const slides = document.getElementsByClassName("imageSlider");
-const  totalSlides = slides.length;
+document.addEventListener( 'DOMContentLoaded', function () {
+  var designs = new Splide( '#image-carousel', {
+		perPage    : 1,
+		breakpoints: {
+			640: {
+				perPage: 1,
+			},
+		},
+    gap: 3,
+  } )
+  designs.mount();
+} );
 
-
-document.querySelector(".btn-right").addEventListener("click", moveToNextSlide);
-
-
-document.querySelector(".btn-left").addEventListener("click", moveToPrevSlide)
-
-
-function updateSlidePosition(){
-  for(let slide of slides){
-    slide.classList.remove('imageSlider__visible');
-    slide.classList.add('imageSlider__hidden');
-  }
-  slides[slidePosition].classList.add('imageSlider__visible')
-  slides[slidePosition].classList.remove('imageSlider__hidden')
-}
-
-function moveToNextSlide(){
-  if(slidePosition === totalSlides - 1){
-    slidePosition = 0
-  }else{
-    slidePosition++
-  }
-  updateSlidePosition();
-}
-function moveToPrevSlide(){
-  if(slidePosition === 0){
-    slidePosition = totalSlides - 1;
-  }else{
-    slidePosition--
-  }
-  updateSlidePosition();
-
-}

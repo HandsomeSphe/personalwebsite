@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/main.css" />
-
+    <link rel="stylesheet" href="./sass/splide.min.css" />
+    
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link
@@ -536,31 +538,60 @@
 
 
 
-      <!----//////////////section 3 ///////////-->
-         <!--//////////////////////////////////////////////////////////////////////////////
+    <!----//////////////section 3 ///////////-->
+    <!--//////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////SLIDER SECTION//////////////////////-->
-      <section class="section section__slider" id="slider_section">
-          <div class="container">
-            <div id="section__portfolio--heading">UI/UX Designs</div>
-            <div class="slider">
-              <div class="images">
-                <img class="imageSlider imageSlider__visible" src="./slider/creek olive oil.jpg" alt="">
-                <img class="imageSlider" src="./slider/menziwebsite.png" alt="">      
-                <img class="imageSlider" src="./slider/menziwebsite.png" alt="">      
-                <img class="imageSlider" src="./slider/preminous.png" alt="">
-                <img class="imageSlider" src="./slider/steakhouse.jpg" alt="" >      
-                <img class="imageSlider" src="./slider/Vinta.png" alt="" >      
-                <img class="imageSlider" src="./slider/cuts.jpg" alt="" >      
-                <img class="imageSlider" src="./slider/vawter.png" alt="" >      
-                <img class="imageSlider" src="./slider/ogcarperfume home page.jpg" alt="" >      
-              </div>
-              <div class="btns">
-                <div class="btn-left">&leftarrow;</div>
-                <div class="btn-right">&rightarrow;</div>
-              </div>
+    <style>
+      #splide{
+        height: 70rem;
+        padding: 3rem auto !important;
+      }
+      .splide__slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem 2rem;
+      }
+      .splide__slide img{
+          width: 75rem;
+          height: auto;
+      }
+    </style>
+
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="./slider/creek olive oil.jpg" alt="">
+          </li>
+          <li class="splide__slide">
+            <div >
+              <img src="./slider/cuts.jpg" class="" alt="">
             </div>
-          </div>
-      </section>
+          </li>
+          <li class="splide__slide">
+            <img src="./slider/steakhouse.jpg" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="./slider/Vinta.png" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="./slider/menziwebsite.png" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="./slider/ogcarperfume home page.jpg" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="./slider/vawter.png" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="./slider/preminous.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
 
       <!----//////////////section 4 ///////////-->
          <!--//////////////////////////////////////////////////////////////////////////////
@@ -631,6 +662,7 @@
       </footer> 
   </main>
     <script src="script.js"></script>
+    <script  defer src="splide.js"></script>
 
   </body>
 </html>
