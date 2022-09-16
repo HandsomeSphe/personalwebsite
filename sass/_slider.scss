@@ -1,17 +1,17 @@
+#splide{
+  height: 70rem;
+  padding: 3rem auto !important;
+}
+.splide__slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 2rem;
+  height: 55rem;
+
+  
+}
 .splide__slide img{
-    @include respond(tab-land) {
-        display: none;
-      }
-      @include respond(tablet) {
-        display: none;
-      }
-      @include respond(tab-port) {
-        display: none;
-      }
-      @include respond(s-phone) {
-        display: none;
-      }
-      @include respond(xs-phone) {
-        width: 15rem;
-      }
+    width: 75rem;
+    height: auto;
 }
