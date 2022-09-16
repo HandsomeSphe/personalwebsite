@@ -8,10 +8,34 @@
   justify-content: center;
   margin: 4rem 2rem;
   height: 55rem;
+  @include respond(tab-land) {
+    height: 36rem;
+  }
+  @include respond(tab-port) {
+    height: 37rem;
+  }
+  @include respond(s-phone) {
+    height: 38rem;
+  }
+  @include respond(xs-phone) {
+     height: 40rem;
+  }
 
   
 }
 .splide__slide img{
     width: 75rem;
     height: auto;
+    @include respond(tab-land) {
+      width: 43rem;
+    }
+    @include respond(tab-port) {
+      width: 36rem;
+    }
+    @include respond(s-phone) {
+      width: 32rem;
+    }
+    @include respond(xs-phone) {
+      width: 30rem;
+    }
 }

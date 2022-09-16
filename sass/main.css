@@ -2838,8 +2838,56 @@ label {
   height: 55rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .splide__slide {
+    height: 36rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .splide__slide {
+    height: 37rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .splide__slide {
+    height: 38rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .splide__slide {
+    height: 40rem;
+  }
+}
+
 .splide__slide img {
   width: 75rem;
   height: auto;
+}
+
+@media only screen and (max-width: 48em) {
+  .splide__slide img {
+    width: 43rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .splide__slide img {
+    width: 36rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .splide__slide img {
+    width: 32rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .splide__slide img {
+    width: 30rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
