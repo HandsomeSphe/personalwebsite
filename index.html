@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/main.css" />
     <link rel="stylesheet" href="./sass/splide.min.css" />
-    
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -20,49 +24,17 @@
       type="image/x-icon"
       sizes="144x144"
     />
-    <script src="https://kit.fontawesome.com/ea1b201257.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ea1b201257.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Sphe_handy</title>
   </head>
   <body>
-<!--//////////////////////////////////////////////////////////////////////////////
+    <!--//////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////Navigation Bar //////////////////////-->
 
-
-  <nav class="nav" id="fixedbar">
-    <img
-      class="logo"
-      src="/LogoIconn/PNG/logo-removebg-preview.png"
-      alt="logo"
-    />
-    <ul class="nav__links">
-      <li class="nav__item">
-        <a href="#home" class="nav__link">Home</a>
-      </li>
-      <li class="nav__item">
-        <a href="#section__about" class="nav__link">About</a>
-      </li>
-      <li class="nav__item">
-        <a href="#slider_section" class="nav__link">Designs?</a>
-      </li>
-      <li class="nav__item">
-        <a href="#section__portfolio" class="nav__link">Portofolio</a>
-      </li>
-      <li class="nav__item nav__item--btn">
-        <a href="#footer" class="nav__link nav__link--btn btn--show-popup"
-          >Contact</a
-        >
-      </li>
-    </ul>
-    <div class="burger__icon">
-      <svg id="menu_icon">
-        <use
-          xlink:href="mainIcons/SVG/sprite.svg#icon-bars-solid"
-        ></use>
-      </svg>
-    </div>
-  </nav> 
-<header class="header">
-     <nav class="nav" id="actualnav">
+    <nav class="nav" id="fixedbar">
       <img
         class="logo"
         src="/LogoIconn/PNG/logo-removebg-preview.png"
@@ -76,7 +48,7 @@
           <a href="#section__about" class="nav__link">About</a>
         </li>
         <li class="nav__item">
-          <a href="#slider_section" class="nav__link">Designs?</a>
+          <a href="#image-carousel" class="nav__link">Designs?</a>
         </li>
         <li class="nav__item">
           <a href="#section__portfolio" class="nav__link">Portofolio</a>
@@ -87,175 +59,153 @@
           >
         </li>
       </ul>
-      <div class="burger__icon" id="secondburger">
+      <div class="burger__icon">
         <svg id="menu_icon">
-          <use
-            xlink:href="mainIcons/SVG/sprite.svg#icon-bars-solid"
-          ></use>
+          <use xlink:href="mainIcons/SVG/sprite.svg#icon-bars-solid"></use>
         </svg>
       </div>
-    </nav> 
-  <!--//////////////////////////////////////////////////////////////////////////////
+    </nav>
+    <header class="header">
+      <nav class="nav" id="actualnav">
+        <img
+          class="logo"
+          src="/LogoIconn/PNG/logo-removebg-preview.png"
+          alt="logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#section__about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#image-carousel" class="nav__link">Designs?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#section__portfolio" class="nav__link">Portofolio</a>
+          </li>
+          <li class="nav__item nav__item--btn">
+            <a href="#footer" class="nav__link nav__link--btn btn--show-popup"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="burger__icon" id="secondburger">
+          <svg id="menu_icon">
+            <use xlink:href="mainIcons/SVG/sprite.svg#icon-bars-solid"></use>
+          </svg>
+        </div>
+      </nav>
+      <!--//////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////HOME PAGE//////////////////////-->
-    <div class="header__title" id="home">
-      <h5>Hi, my name is</h5>
-      <h1>Siphelele Muthwa</h1>
-      <h1 class="h1">
-        I am a website
-        <div class="options">
-          <span></span>
-          <span class="designer">designer</span>
-          <span class="developer">developer</span>
-        </div>
-      </h1>
-      <p class="person-description">
-        I'm a front-end developer and a UI/UX designer. I design and build websites from
-        scratch. I am on a quest to build great digital products that other people can use. I am solving everyday problems with code. I build websites for companies, brands and individuals. 
-      </p>
-
-    </div>
-    <!------Side line ----->
-    <div class="random-line"></div>
-
-<!--//////////////////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////MENU BAR//////////////////////-->
-    <!---Menu for small screens-->
-   <div class="menu">
-      <div>
-        <svg class="remove">
-          <use
-            xlink:href="mainIcons/SVG/sprite.svg#icon-share-solid-1"
-          ></use>
-        </svg>
+      <div class="header__title" id="home">
+        <h5>Hi, my name is</h5>
+        <h1>Siphelele Muthwa</h1>
+        <h1 class="h1">
+          I am a website
+          <div class="options">
+            <span></span>
+            <span class="designer">designer</span>
+            <span class="developer">developer</span>
+          </div>
+        </h1>
+        <p class="person-description">
+          I'm a front-end developer and a UI/UX designer. I design and build
+          websites from scratch. I am on a quest to build great digital products
+          that other people can use. I am solving everyday problems with code. I
+          build websites for companies, brands and individuals.
+        </p>
       </div>
-      <ul class="menu__links">
-        <li class="menu__items">
-          <a href="#home" class="menu__link">Home</a>
-        </li>
-        <li class="menu__items">
-          <a href="#section__about" class="menu__link">About</a>
-        </li>
-        <li class="menu__items">
-          <a href="#slider_section" class="menu__link">Designs?</a>
-        </li>
-        <li class="menu__items">
-          <a href="#section__portfolio" class="menu__link">Portfolio</a>
-        </li>
-        <li class="menu__items">
-          <a href="#footer" class="menu__link">Contact</a>
-        </li>
-      </ul>
-    </div>
-</header>
+      <!------Side line ----->
+      <div class="random-line"></div>
 
-
-  <main class="main">
-    <!--//////////////////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////ABOUT SECTION//////////////////////-->
-     <section class="section" >
-        <div id="section__about">
-            <div id="section__about--pic">
-              <div class="pic--outline">
-                <img src="./images/IMG-20201102-WA0010.jpg" alt="" class="pic" />
-              </div>
-    
-              <div class="my-location">
-                <svg class="location-pin">
-                  <use xlink:href="mainIcons/SVG/sprite.svg#icon-location-dot-solid"></use>
-                </svg>
-                South Africa
-              </div>
-              <div class="social__media--handles">
-                <a
-                  href="https://www.instagram.com/sphe_handy/"
-                  target="_blank"
-                  class="instagram-link"
-                >
-                  <svg class="Instagram icon">
-                    <use
-                      xlink:href="Icons3/SVG/sprite.svg#icon-hexagon_instagram_media_polygon_social_icon"
-                    ></use>
-                  </svg>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/siphelele-muthwa-4456771b6/"
-                  target="_blank"
-                  class="linkedin-link"
-                >
-                  <svg class="linkedin icon">
-                    <use
-                      class="linkedin icon"
-                      xlink:href="mainIcons/SVG/sprite.svg#icon-linkedin-brands"
-                    ></use>
-                  </svg>
-                </a>
-                <a
-                  href="https://github.com/HandsomeSphe"
-                  target="_blank"
-                  class="github-link"
-                >
-                  <svg class="github icon">
-                    <use
-                      xlink:href="mainIcons/SVG/sprite.svg#icon-github-square-brands"
-                    ></use>
-                  </svg>
-                </a>
-                <a
-                  href="https://www.facebook.com/siphehandy/"
-                  target="_blank"
-                  class="facebook-link"
-                >
-                  <svg class="facebook icon">
-                    <use
-                      xlink:href="mainIcons/SVG/sprite.svg#icon-facebook-square-brands"
-                    ></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-       
-            <div id="section__about--details">
-              <div class="my-name">Background</div>
-    
-              <div class="personal-description">
-                <div class="personal-description-1">
-                  Coming from a indoor life, I was always on the browser searching, playing online
-                  games, reading blogs and so on, I felt in love with websites. I wanted to know how to build one and like that I was hooked. <span class="time-experience">1</span> years later I am self-taught web developer and a designer.
-                   <!-- You can see my
-                  <a
-                    href="./images/Siphelele_Muthwa_-_Front_end_Developer,_UIUX_Designer.pdf"
-                    target="_blank"
-                    class="devMille"
-                    >resume</a
-                  >. -->
-                </div>
-                <div class="personal-description-2">
-                  <!-- Status: freelancing. -->
-                </div>
-              </div>
-              <div class="tools">
-                <div class="tools__programming--title">
-                  Programming and design tools
-                </div>
-                <div class="tools__programming--items">
-                  <div class="item item1">JavaScripts</div>
-                  <div class="item item2">HTML5</div>
-                  <div class="item item3">CSS3/Sass</div>
-                  <div class="item item4">Bootstrap</div>
-                  <div class="item item5">Liquid</div>
-                  <div class="item item6">Figma</div>
-                  <div class="item item7">Shopify</div>
-                  <div class="item item8">GIMP</div>
-                </div>
-              </div>
-            </div>
+      <!--//////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////MENU BAR//////////////////////-->
+      <!---Menu for small screens-->
+      <div class="menu">
+        <div>
+          <svg class="remove">
+            <use xlink:href="mainIcons/SVG/sprite.svg#icon-share-solid-1"></use>
+          </svg>
         </div>
-   
-      </section> 
+        <ul class="menu__links">
+          <li class="menu__items">
+            <a href="#home" class="menu__link">Home</a>
+          </li>
+          <li class="menu__items">
+            <a href="#section__about" class="menu__link">About</a>
+          </li>
+          <li class="menu__items">
+            <a href="#slider_section" class="menu__link">Designs?</a>
+          </li>
+          <li class="menu__items">
+            <a href="#section__portfolio" class="menu__link">Portfolio</a>
+          </li>
+          <li class="menu__items">
+            <a href="#footer" class="menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-    <!--//////////////////////////////////////////////////////////////////////////////
+    <main class="main">
+      <!--//////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////ABOUT SECTION//////////////////////-->
+      <section class="section">
+        <div id="section__about">
+          <div id="section__about--pic">
+            <div class="pic--outline">
+              <img src="./images/IMG-20201102-WA0010.jpg" alt="" class="pic" />
+            </div>
+
+            <div class="my-location">
+              <svg class="location-pin">
+                <use
+                  xlink:href="mainIcons/SVG/sprite.svg#icon-location-dot-solid"
+                ></use>
+              </svg>
+              South Africa
+            </div>
+            <div class="social__media--handles"></div>
+          </div>
+
+          <div id="section__about--details">
+            <div class="my-name">Background</div>
+
+            <div class="personal-description">
+              <div class="personal-description-1">
+                Coming from a indoor life, I was always on the browser
+                searching, playing online games, reading blogs and so on, I felt
+                in love with websites. I wanted to know how to build one and
+                like that I was hooked.
+                <span class="time-experience">1</span> years later I am
+                self-taught web developer and a designer.
+              </div>
+              <div class="personal-description-2"></div>
+            </div>
+            <div class="tools">
+              <div class="tools__programming--title">
+                Programming and design tools
+              </div>
+              <div class="tools__programming--items">
+                <div class="item item1">JavaScript</div>
+                <div class="item item2">React</div>
+                <div class="item item3">Redux</div>
+                <div class="item item4">TyperScript</div>
+                <div class="item item5">Liquid</div>
+                <div class="item item6">Html5</div>
+                <div class="item item7">Css/Sass</div>
+                <div class="item item8">Shopify</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--//////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////PORTFOLIO SECTION//////////////////////-->
-       <section class="project" id="section__portfolio">
+      <section class="project" id="section__portfolio">
         <div id="section__portfolio--heading">Portfolio</div>
         <div id="section__portfolio--contanier">
           <div class="project__photo" id="OGpic">
@@ -268,16 +218,12 @@
           <div class="project__description">
             <div class="project__description--heading">Fokify Application</div>
             <div class="project__description--text">
-              <!-- OC car perfume is a South African brand that produce high quality
-              car perfumes which is based in Durban.They have wide varity of
-              products so they were looking a website that will make them stand
-              out in the crown but be modern as well. -->
-              Fokify is a food recipe application which use an API to access thousands
-              of recipes, ingredients and directions on how to cook a particular meal.
-              It comprises of other features like inserting your own recipe, bookmarking
-              a recipe and adjusting number of servings while it automatically adjusting
-              number of ingredients to be used.
- 
+              Fokify is a food recipe application which use an API to access
+              thousands of recipes, ingredients and directions on how to cook a
+              particular meal. It comprises of other features like inserting
+              your own recipe, bookmarking a recipe and adjusting number of
+              servings while it automatically adjusting number of ingredients to
+              be used.
             </div>
             <div class="project__description--buttons">
               <div class="view-btn">
@@ -328,21 +274,25 @@
               </div>
             </div>
           </div>
-        </div> 
+        </div>
         <!----//////////////END OF PROJECT 1 ///////////-->
         <!---//////////Second Project //////////////////////-->
-       <div id="section__portfolio--contanier">
+        <div id="section__portfolio--contanier">
           <div class="project__photo">
-            <img class="firstPic" src="./images/Mapty application.png" alt="Mapty" />
+            <img
+              class="firstPic"
+              src="./images/Mapty application.png"
+              alt="Mapty"
+            />
           </div>
           <div class="project__description">
             <div class="project__description--heading">Mapty Application</div>
             <div class="project__description--text">
-              Mapty application is a geolocation single-page application that show you a
-              map based on where you are at that moment. It function is to calculate your 
-              cycling period or steps you have taken while working out.
-
-              It allows you to mark your starting position on the map, save previous workouts.
+              Mapty application is a geolocation single-page application that
+              show you a map based on where you are at that moment. It function
+              is to calculate your cycling period or steps you have taken while
+              working out. It allows you to mark your starting position on the
+              map, save previous workouts.
             </div>
             <div class="project__description--buttons">
               <div class="view-btn">
@@ -390,11 +340,10 @@
                   <div class="bullet green"></div>
                   <div class="javascript-text">HTML & CSS/SASS</div>
                 </div>
-
               </div>
             </div>
           </div>
-        </div>  
+        </div>
         <!----//////////////END OF PROJECT 2 ///////////-->
         <!---//////////Third Project //////////////////////-->
         <div class="project" id="section__portfolio--contanier">
@@ -408,10 +357,13 @@
           <div class="project__description">
             <div class="project__description--heading">Bankist Website</div>
             <div class="project__description--text projec--2">
-            Preminous is an ecommerce store that sells wrist watches. It's sells all kind of brands from popular to non-popular brands. The owner of the store have a dashboard where he can add products, remove or edits products, can have access to who logs in and can send emails, sms and so on. You can fully customise this website to your own needs. 
-            <br />
-             
-            
+              Preminous is an ecommerce store that sells wrist watches. It's
+              sells all kind of brands from popular to non-popular brands. The
+              owner of the store have a dashboard where he can add products,
+              remove or edits products, can have access to who logs in and can
+              send emails, sms and so on. You can fully customise this website
+              to your own needs.
+              <br />
             </div>
             <div class="project__description--buttons">
               <div class="view-btn">
@@ -464,7 +416,6 @@
           </div>
         </div>
         <!----//////////////END OF PROJECT 3 ///////////-->
-
         <!---//////////Fourth Project //////////////////////-->
         <!-- <div class="project" id="section__portfolio--contanier">
           <div class="project__photo">
@@ -538,67 +489,62 @@
           </div>
         </div> -->
         <!----//////////////END OF PROJECT 4 ///////////-->
-      <!-- </section> -->
+        <!-- </section> -->
       </section>
 
-
-
-    <!----//////////////section 3 ///////////-->
-    <!--//////////////////////////////////////////////////////////////////////////////
+      <!----//////////////section 3 ///////////-->
+      <!--//////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////SLIDER SECTION//////////////////////-->
 
-    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <img src="./slider/creek olive oil.jpg" alt="">
-          </li>
-          <li class="splide__slide">
-            <div >
-              <img src="./slider/cuts.jpg" class="" alt="">
-            </div>
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/steakhouse.jpg" alt="">
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/Vinta.png" alt="">
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/menziwebsite.png" alt="">
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/ogcarperfume home page.jpg" alt="">
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/vawter.png" alt="">
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/preminous.png" alt="">
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/allform.jpg" alt="">
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/godfinests.jpg" alt="">
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/oldspice.jpg" alt="">
-          </li>
-          <li class="splide__slide">
-            <img src="./slider/Uwear.jpg" alt="">
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
+      <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="./slider/creek olive oil.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <div>
+                <img src="./slider/cuts.jpg" class="" alt="" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/steakhouse.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/Vinta.png" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/menziwebsite.png" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/ogcarperfume home page.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/vawter.png" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/preminous.png" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/allform.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/godfinests.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/oldspice.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="./slider/Uwear.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!----//////////////section 4 ///////////-->
-         <!--//////////////////////////////////////////////////////////////////////////////
+      <!--//////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////FOOTER SECTION//////////////////////-->
-    <footer class="section" id="footer">
-      
+      <footer class="section" id="footer">
         <!-----Contact Page Popup-->
         <div class="contactpage">
           <div class="contact-popup--heading">
@@ -651,7 +597,7 @@
 
         <div id="footer__heading">
           <i class="fa-solid fa-trophy-star"></i>
-            This website was designed and build by Sphe_handy. 
+          This website was designed and build by Sphe_handy.
         </div>
         <button id="footer__btn">Contact me via email</button>
         <div id="footer__logo">
@@ -660,10 +606,9 @@
           </svg>
         </div>
         <div id="copyright">&copy;copyright.All Rights Reserved</div>
-      </footer> 
-  </main>
+      </footer>
+    </main>
     <script src="script.js"></script>
-    <script  defer src="splide.js"></script>
-
+    <script defer src="splide.js"></script>
   </body>
 </html>
